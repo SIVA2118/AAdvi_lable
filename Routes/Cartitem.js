@@ -26,4 +26,3 @@ router.get("/", Auth, getCart);
 router.get("/user/:userId", Auth, getUserCart);
 
 export default router;
-
