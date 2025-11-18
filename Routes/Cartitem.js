@@ -5,7 +5,7 @@ import {
   removeItem,
   getCart,
   getUserCart,
-} from "../Controller/CartItem.js";
+} from "../Controller/Cartitem.js";
 import { Auth } from "../Middleware/Auth.js";
 
 const router = express.Router();
@@ -26,3 +26,4 @@ router.get("/", Auth, getCart);
 router.get("/user/:userId", Auth, getUserCart);
 
 export default router;
+
